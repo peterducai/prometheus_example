@@ -8,7 +8,7 @@ Clone this repo and run following containers.
 
 ## To run prometheus
 
-> podman run --mount=type=bind,src=$(pwd)/data,dst=/etc/prometheus,relabel=shared --publish=127.0.0.1:9090:9090 --detach prometheus:latest
+> podman run --net="host" --mount=type=bind,src=$(pwd)/data,dst=/etc/prometheus,relabel=shared --detach prometheus:latest
 
 ## Open in browser
 
