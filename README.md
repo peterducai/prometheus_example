@@ -1,5 +1,7 @@
 # prometheus_example
 
+Clone this repo and run following containers.
+
 ## To run node-exporter
 
 > podman run --net="host" --pid="host" --mount=type=bind,src=/,dst=/host,ro=true,bind-propagation=rslave --detach quay.io/prometheus/node-exporter:latest --path.rootfs=/host
